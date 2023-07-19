@@ -8,14 +8,11 @@ string Description;
 int NoCandidate;
 int CenterReqd;
 
-void CALCNTR()
-{
-    calculate=NoCandidate/100+1;
-}
-
 public:
-void SCHEDULE()
-{
+ test()
+ {
+
+
     cout<<"enter the value TestCode:";
     cin>>testcode;
     cout<<"enter the value  Description:";
@@ -23,25 +20,23 @@ void SCHEDULE()
     cout<<"enter the value NoCandidate:";
     cin>>NoCandidate;
   
-    CALCNTR();
-}
+  
+    calculate=NoCandidate/100+1;
+ }
 
+void display()
+    {
 
-void DISPTEST() 
-{
-    cout<<"testcode\t  Description\t NoCandidate\t total "<<endl;
+    cout<<"testcode\tDescription\tNoCandidate\ttotal "<<endl;
     cout<<testcode<<"\t" << Description<<"\t"<< NoCandidate<<"\t"<<calculate<<"\t"<<endl;
-
-}
-
+    }
 
 
 };
 int main()
 {
-    test v;
-    v.SCHEDULE();
-    v.DISPTEST();
+    test v;  
+    v.display();
 }
 
 
