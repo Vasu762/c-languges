@@ -15,19 +15,19 @@ class marksheet{
         cin>>admno;
         cout<<"enter the sname:";
         cin>>sname;
-        cout<<"enter the eng:";
+     cout<<"enter the eng:";
         cin>>eng;
         cout<<"enter the guj:";
         cin>>guj;
         cout<<"enter the sci:";
+        cin>>sci;
       
         total=eng+guj+sci;
 
         per=total/3;
-    }
-    void display()
-    {
-
+    
+    
+    
         cout<<"admno\t sname\t eng\t guj\t sci\t total\t per\t"<<endl;
          cout<<admno<<"\t"<< sname<<"\t"<< eng<<"\t" <<guj<<"\t"<< sci<<"\t"<< total<<"\t"<< per<<"\t"<<endl;
 
@@ -38,5 +38,6 @@ class marksheet{
 int main()
 {
     marksheet m;
-    m.display();
+    
 }
+/////.;;
