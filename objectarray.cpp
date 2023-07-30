@@ -20,7 +20,28 @@ class result{
         cout<<"total is:"<<total<<endl;
         pr=total/3;
         cout<<"pr is :"<<pr<<endl;
+        
+        if(pr>=90)
+        {
+            cout<<"A"<<endl;
+        }
+            else if(pr>=70){
+                cout<<"B"<<endl;
+            }
+                else if(pr>=50)
+                {
+                    cout<<"C"<<endl;
+                }
+                    else if(pr>=40)
+                    {
+                        cout<<"D"<<endl;
+                    }
+                        else
+                        {
+                            cout<<"failed";
+                        }
     }
+
 };
 int main()
 {
