@@ -9,7 +9,7 @@ class result{
     {
         cout<<"enter the mathe markes:"<<endl;
         cin>>mathe;
-        cout<<"enter the mathe sci:"<<endl;
+        cout<<"enter the sci:"<<endl;
         cin>>sci;
         cout<<"enter the eng markes:"<<endl;
         cin>>eng;
