@@ -21,7 +21,7 @@ class test : public base
         {
            a=a*i;
         }
-        cout<<"Factorial of "<< n<< "is:"<<a <<endl;5
+        cout<<"Factorial of "<< n<< "is:"<<a <<endl;
     }
     
 };
