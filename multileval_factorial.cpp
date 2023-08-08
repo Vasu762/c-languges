@@ -14,7 +14,6 @@ class base1{
 class base2:public base1
 {
     public:
-    int a=1;
     void getdata()
     {
         cout<<"factorial number is:";

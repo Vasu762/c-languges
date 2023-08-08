@@ -56,20 +56,20 @@ class restorant{
    {
           if(pavbhaji)
         {
-            cout<<"cgst"<<cgst<<pavbhaji/2.5*100<<endl;
-            cout<<"igst"<<igst<<pavbhaji/2.5*100<<endl;
+            cout<<"cgst"<<cgst<<pavbhaji*2.5/100<<endl;
+            cout<<"igst"<<igst<<pavbhaji*2.5/100<<endl;
             cout<<"total"<<pavbhaji+cgst+igst<<endl;
         }
             else if(dhosa) 
             {
-                cout<<"cgst"<<cgst<<dhosa/2.5*100<<endl;
-                cout<<"igst"<<igst<<dhosa/2.5*100<<endl;
+                cout<<"cgst"<<cgst<<dhosa*2.5/100<<endl;
+                cout<<"igst"<<igst<<dhosa*2.5/100<<endl;
                 cout<<"total"<<dhosa+cgst+igst<<endl;
             }   
                 else if(manchuriyam)
                 {
-                cout<<"cgst"<<cgst<<manchuriyam/2.5*100<<endl;
-                cout<<"igst"<<igst<<manchuriyam/2.5*100<<endl;
+                cout<<"cgst"<<cgst<<manchuriyam*2.5/100<<endl;
+                cout<<"igst"<<igst<<manchuriyam*2.5/100<<endl;
                 cout<<"total"<<manchuriyam+cgst+igst<<endl;
                 }
    }
@@ -80,6 +80,9 @@ int main()
 {
 restorant r;
 r.show();
+r.menu();
+r.getdata();
+r.cal();
 
 
 }
