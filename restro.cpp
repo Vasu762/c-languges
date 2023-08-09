@@ -17,7 +17,7 @@ int cal(int x)
 class bill
 {
 public:
-    int order, qty, total, totalnet, ch, netbill,amount;
+    int order, qty, total=0, totalnet, ch, netbill, amount;
     string name, mono;
     float cgst, sgst;
 
@@ -31,7 +31,6 @@ public:
 
         cout << "=============================wel-come to customer======================================";
         cout << "=====================================MENU==============================================" << endl;
-        cout << endl;
         cout << "(1)  pavbhaji=======================90 only." << endl;
         cout << "(2)  dhosa==========================99 only." << endl;
         cout << "(3)  manchuriyam====================99 only." << endl;
@@ -53,7 +52,7 @@ public:
                 cout << "Please enter the qty : ";
                 cin >> qty;
                 amount = 90 * qty;
-                cout<<"amount:"<<amount<<endl;
+                cout << "amount:" << amount << endl;
                 total += amount;
                 cout << "Order :pavbhaji." << endl;
                 cout << endl;
@@ -63,7 +62,7 @@ public:
                 cout << "Please enter the qty : ";
                 cin >> qty;
                 amount = 99 * qty;
-                cout<<"amount:"<<amount<<endl;
+                cout << "amount:" << amount << endl;
                 total += amount;
                 cout << "Order :dhosa." << endl;
                 cout << endl;
@@ -73,32 +72,30 @@ public:
                 cout << "Please enter the qty : ";
                 cin >> qty;
                 amount = 99 * qty;
-                cout<<"amount:"<<amount<<endl;
+                cout << "amount:" << amount << endl;
                 total += amount;
                 cout << "Order :manchuriyam." << endl;
                 cout << endl;
-               
+
                 cout << "~---------THANK YOU FOR COMING-----------~" << endl;
                 break;
             case 4:
                 cout << "Please enter the qty : ";
                 cin >> qty;
-                total = 50 * qty;
-                cout << "total" << total << endl;
-                cout << "Order :pavbhaji." << endl;
-                cout << "Number of deals : " << qty << endl;
-                cout << "total" << total << endl;
+                amount = 50 * qty;
+                cout << "amount:" << amount << endl;
+                total += amount;
+                cout << "Order :Burgar." << endl;
                 cout << endl;
                 cout << "~---------THANK YOU FOR COMING-----------~" << endl;
                 break;
             case 5:
-                cout << "Please enter the qty:";
+              cout << "Please enter the qty : ";
                 cin >> qty;
-                total = 400 * qty;
-                cout << "total" << total << endl;
-                cout << "Order :pavbhaji." << endl;
-                cout << "Number of deals : " << qty << endl;
-                cout << "total" << total << endl;
+                amount = 400 * qty;
+                cout << "amount:" << amount << endl;
+                total += amount;
+                cout << "Order :Pizza." << endl;
                 cout << endl;
                 cout << "~---------THANK YOU FOR COMING-----------~" << endl;
                 break;
@@ -107,7 +104,7 @@ public:
                 cin >> qty;
                 total = 40 * qty;
                 cout << "total" << total << endl;
-                cout << "Order :pavbhaji." << endl;
+                cout << "Order :Coke." << endl;
                 cout << "Number of deals : " << qty << endl;
                 cout << "total" << total << endl;
                 cout << endl;
@@ -117,8 +114,7 @@ public:
                 break;
             }
         } while (ch != 7);
-         
-        }
+    }
 };
 int main()
 {
