@@ -17,7 +17,7 @@ int cal(int x)
 class bill
 {
 public:
-    int order, qty, total, totalnet, ch, netbill;
+    int order, qty, total, totalnet, ch, netbill,amount;
     string name, mono;
     float cgst, sgst;
 
@@ -52,8 +52,9 @@ public:
             case 1:
                 cout << "Please enter the qty : ";
                 cin >> qty;
-                total = 90 * qty;
-                cout << "total" << total << endl;
+                amount = 90 * qty;
+                cout<<"amount:"<<amount<<endl;
+                total += amount;
                 cout << "Order :pavbhaji." << endl;
                 cout << endl;
                 cout << "~---------THANK YOU FOR COMING-----------~" << endl;
@@ -61,20 +62,22 @@ public:
             case 2:
                 cout << "Please enter the qty : ";
                 cin >> qty;
-                total = 99 * qty;
-                cout << "total" << total << endl;
-                cout << "Order :pavbhaji." << endl;
+                amount = 99 * qty;
+                cout<<"amount:"<<amount<<endl;
+                total += amount;
+                cout << "Order :dhosa." << endl;
                 cout << endl;
                 cout << "~---------THANK YOU FOR COMING-----------~" << endl;
                 break;
             case 3:
                 cout << "Please enter the qty : ";
                 cin >> qty;
-                total = 99 * qty;
-                cout << "total" << total << endl;
-                cout << "Order :pavbhaji." << endl;
-                cout << "Number of deals : " << qty << endl;
+                amount = 99 * qty;
+                cout<<"amount:"<<amount<<endl;
+                total += amount;
+                cout << "Order :manchuriyam." << endl;
                 cout << endl;
+               
                 cout << "~---------THANK YOU FOR COMING-----------~" << endl;
                 break;
             case 4:
@@ -114,12 +117,13 @@ public:
                 break;
             }
         } while (ch != 7);
-        cal(total);
-    }
+         
+        }
 };
 int main()
 {
     bill b;
     b.get();
     b.set();
+    cal(b.total);
 }
