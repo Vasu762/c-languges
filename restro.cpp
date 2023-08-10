@@ -17,7 +17,7 @@ int cal(int x)
 class bill
 {
 public:
-    int order, qty, total=0, totalnet, ch, netbill, amount;
+    int order, qty, total = 0, totalnet, ch, netbill, amount;
     string name, mono;
     float cgst, sgst;
 
@@ -90,7 +90,7 @@ public:
                 cout << "~---------THANK YOU FOR COMING-----------~" << endl;
                 break;
             case 5:
-              cout << "Please enter the qty : ";
+                cout << "Please enter the qty : ";
                 cin >> qty;
                 amount = 400 * qty;
                 cout << "amount:" << amount << endl;
